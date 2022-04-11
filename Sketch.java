@@ -26,11 +26,11 @@ public class Sketch extends PApplet {
 	  
 	  // draw flowers
     flower(200, 200, 50, 16);
-    flower(200, 600, 100, 8);
-    flower(600, 200, 30, 32);
+    flower(200, 500, 100, 8);
+    flower(400, 200, 30, 32);
 
     // draw house
-    house(1, 1, 247);
+    house(500, 210, 247);
     
   }
 
@@ -112,6 +112,7 @@ public class Sketch extends PApplet {
     * @return return the Y coordinate to the middle of the screen
     *
     */
+  
   public int returnY(int intHouseY, int intScale){
     return intHouseY + (intScale / 4);
     }
