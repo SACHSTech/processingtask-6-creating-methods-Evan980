@@ -43,7 +43,7 @@ public class Sketch extends PApplet {
   * @return none
   */
   public void house(int intHouseX, int intHouseY, int intScale)
-  {
+  { 
     // body of house
     fill(0, 0, 0);
     rect(intHouseX, intHouseY+(intScale/8), (intScale/2), (intScale/2));
@@ -90,5 +90,29 @@ public class Sketch extends PApplet {
     // reset to original position
     popMatrix();
     }
+
+    /**
+    * return for the X position of house
+    *
+    * @param intHouseX the X position of the house
+    * @param intScale the scale of the house
+    * @return return the X coordinate to the middle of the screen
+    *
+    */
   
-}
+  public int returnX(int intHouseX, int intScale){
+    return intHouseX + (intScale / 4);
+    }
+  
+    /**
+    * return for the Y position of house
+    *
+    * @param intHouseY the Y position of the house
+    * @param intScale the scale of the house
+    * @return return the Y coordinate to the middle of the screen
+    *
+    */
+  public int returnY(int intHouseY, int intScale){
+    return intHouseY + (intScale / 4);
+    }
+  }
